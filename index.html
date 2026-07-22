@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BC Science Tutor</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="hero">
+        <div>
+          <p class="eyebrow">Grades 9–12 • BC Curriculum</p>
+          <h1>🌱 Science Sidekick</h1>
+          <p class="subtitle">
+            Ask a science question and I’ll help you think it through together with
+            friendly, step-by-step prompts.
+          </p>
+        </div>
+      </section>
+
+      <section class="guide-panel">
+        <h2>How your study buddy works</h2>
+        <ul>
+          <li>It notices which science unit you’re in.</li>
+          <li>It asks one friendly guiding question at a time.</li>
+          <li>It helps you connect ideas, evidence, and formulas yourself.</li>
+        </ul>
+      </section>
+
+      <section class="chat-panel">
+        <div id="chatLog" class="chat-log" aria-live="polite"></div>
+
+        <form id="questionForm" class="question-form">
+          <label for="questionInput" class="sr-only">Ask your science question</label>
+          <textarea
+            id="questionInput"
+            rows="3"
+            placeholder="Example: Why do plants need chlorophyll to make food?"
+          ></textarea>
+          <button type="submit">💬 Ask your science buddy</button>
+        </form>
+      </section>
+
+      <section class="topic-grid">
+        <button class="topic-chip" data-topic="science 9">Science 9</button>
+        <button class="topic-chip" data-topic="science 10">Science 10</button>
+        <button class="topic-chip" data-topic="biology 11">Biology 11</button>
+        <button class="topic-chip" data-topic="chemistry 11">Chemistry 11</button>
+        <button class="topic-chip" data-topic="physics 11">Physics 11</button>
+        <button class="topic-chip" data-topic="biology 12">Biology 12</button>
+        <button class="topic-chip" data-topic="chemistry 12">Chemistry 12</button>
+        <button class="topic-chip" data-topic="physics 12">Physics 12</button>
+      </section>
+    </main>
+
+    <script src="tutorLogic.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
