@@ -28,19 +28,31 @@
         </ul>
       </section>
 
-      <section class="chat-panel">
-        <div id="chatLog" class="chat-log" aria-live="polite"></div>
+      <div class="workspace-grid">
+        <aside class="history-panel">
+          <div class="history-header">
+            <h2>History log</h2>
+          </div>
+          <div id="historyList" class="history-list"></div>
+        </aside>
 
-        <form id="questionForm" class="question-form">
-          <label for="questionInput" class="sr-only">Ask your science question</label>
-          <textarea
-            id="questionInput"
-            rows="3"
-            placeholder="Example: Why do plants need chlorophyll to make food?"
-          ></textarea>
-          <button type="submit">💬 Ask your science buddy</button>
-        </form>
-      </section>
+        <section class="chat-panel">
+          <div id="chatLog" class="chat-log" aria-live="polite"></div>
+
+          <form id="questionForm" class="question-form">
+            <label for="questionInput" class="sr-only">Ask your science question</label>
+            <textarea
+              id="questionInput"
+              rows="3"
+              placeholder="Example: Why do plants need chlorophyll to make food? Press Enter to send."
+            ></textarea>
+            <div class="form-actions">
+              <button type="submit">💬 Ask your science buddy</button>
+              <button type="button" id="newChatButton" class="secondary-button">🔄 New topic chat</button>
+            </div>
+          </form>
+        </section>
+      </div>
 
       <section class="topic-grid">
         <button class="topic-chip" data-topic="science 9">Science 9</button>
